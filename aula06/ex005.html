@@ -15,10 +15,15 @@
 <body>
     <h1>Iniciando estudos com DOM</h1>
     <p>Aqui vai o resultado</p>
+    <p>Sou o paragrafo 2</p>
     <div>Clique em mim </div>
     <script>
     var p1= window.document.getElementsByTagName(`p`)[0]
-    window.document.write(p1.innerHT)
+    window.document.write(p1.innerHTML)
+    p1.style.color='blue'
+    var p2=window.document.getElementsByTagName(`p`)[1]
+    p2.style.color='white'
+    
     </script>
     
 </body>
