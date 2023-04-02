@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div#principal{
+            width:500px;
+            background-color:rgb(255, 255, 255);
+            margin:auto;
+            border-radius: 5px;
+        }
+        h1{
+            text-align: center;
+            color:yellow
+        }
+        body{
+            background-color:#A47762
+        }
+        img{
+            width: 450px;
+            border-radius: 50%;
+            display: none;
+            margin: auto;
+            padding: 10px;
+        }
+        
+    </style>
+</head>
+<body id="fundao">
+    <main >
+        <h1>Hora do dia</h1>
+        <div id="principal">
+            <div id="formata" ></div>
+            <img src="dia.jpg" id="dia" name="horario" >
+            <img src="tarde.jpeg" id="tarde" name="horario">
+            <img src="noite.jpeg" id="noite" name="horario">
+
+
+        </div>
+    </main>
+    <script>
+        var dia=window.document.getElementById('dia')
+        var tarde=window.document.getElementById('tarde')
+        var noite=window.document.getElementById('noite')
+        var formatando =window.document.getElementById('formata')
+        var hora = new Date()
+        var horan =hora.getHours()
+        var minutos =hora.getMinutes()
+        var diarista=window.document.getElementById('dia')
+        var tardista=window.document.getElementById('tarde')
+        var fundo=window.document.getElementById('fundao')
+        var noitista=window.document.getElementById('noite')
+
+        if (horan>=1 && horan<12){
+            formatando.innerHTML=`bom dia,são ${horan} horas e ${minutos} minutos`
+            diarista.style.display='block';
+            formatando.style.textAlign='center'
+            formatando.style.padding='10px'
+            fundo.style.backgroundColor='lightblue'
+
+        }
+        else if(horan>=12 && horan<18){
+            formatando.innerHTML=`Boa tarde, são ${horan} horas e ${minutos} minutos`
+            tardista.style.display='block';
+            formatando.style.textAlign='center'
+            formatando.style.padding='10px'
+            fundo.style.backgroundColor='#A47762'
+            
+            
+            
+        }
+        else{
+            formatando.innerHTML='Boa noite,são'+horan+' horas' +`e ${minutos} minutos`
+            noitista.style.display='block'
+            formatando.style.textAlign='center'
+            formatando.style.padding='10px'
+            fundo.style.backgroundColor='black'
+           
+        }
+        
+        
+    </script>
+    
+</body>
+</html>
