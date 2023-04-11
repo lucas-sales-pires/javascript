@@ -1,0 +1,26 @@
+@charset "UTF-8";
+section{
+    width: 450px;
+    margin: auto;
+    background-color: white;
+    border-radius: 5%;
+    overflow: hidden;
+    box-shadow: 2px 3px 5px ;
+}
+h1{
+    text-align: center;
+}
+body{
+    background-color: aquamarine;
+   
+}
+section>div{
+    padding: 10px;
+}
+#finalizar{
+    margin: 10px;
+    
+}
+select{
+    width: 425px;
+}

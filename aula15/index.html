@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Analisador</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+    <header>
+        <h1>Analisador de Números</h1>
+    </header>
+    <section>
+        <div>
+            <p>
+                <label for="Numeros" >Número(entre 1 e 100):</label>
+                <input id="Numeros" type="number" maxlength="3" required>
+                <button onclick="adicionar()" id="adicionar">Adicionar</button>
+            </p>
+        </div>
+        <div>
+            <select size="10" id="lis"></select>
+        </div>
+        <div id="res">
+            
+        </div>
+        <button onclick="finalizar()" id="finalizar">Finalizar</button>
+    </section>
+    <script src="variaveiscomp.js"></script>
+</body>
+</html>
