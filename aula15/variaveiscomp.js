@@ -31,7 +31,7 @@ function adicionar(){
         res.innerHTML = ''                           // Limpa a mensagem de resultados na tela
     } else {                                        // Caso contrário, a função executa o seguinte bloco de código
      window.alert('Valor inválido ou em uso.')       // Exibe um alerta de erro informando que o valor é inválido ou já está presente na lista
-    }
+    } 
     num.value = ''                                  // Limpa o campo de entrada de valores
     num.focus()                                     // Coloca o foco novamente no campo de entrada de valores
 }
